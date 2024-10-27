@@ -1,0 +1,49 @@
+@import url(./geral.css);
+
+form {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 20%;
+    margin-top: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select {
+    width: 70%;
+    padding: .5rem;
+}
+
+.btn {
+    background-color: #f5a16f;
+    padding: 10px 100px;
+    border-radius: 5px;
+    margin-top: 5%;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #f3b794;
+}
+
+.texto-form {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-top: 4%;
+}
+

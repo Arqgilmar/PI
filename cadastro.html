@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="icon" href="./imagens/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./styles/style-cadastro.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+</head>
+<body>
+    
+    <form id="meuFormulario">
+        <img src="./imagens/S.O 1.png" alt="logo-sosysters">
+
+        <label class="texto-form" for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label class="texto-form" for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" required>
+
+        <label class="texto-form" for="nomeSocial">Nome Social</label>
+        <input type="text" id="nomeSocial" name="nomeSocial">
+           
+        <label class="texto-form" for="sobrenomeSocial">Sobrenome Social:</label>
+        <input type="text" id="sobrenomeSocial" name="sobrenomeSocial">
+           
+        <label class="texto-form" for="dataNascimento">Data de Nascimento:</label>
+        <input class="data" type="date" id="dataNascimento" name="dataNascimento" required>
+           
+        <label class="texto-form" for="rg">RG:</label>
+        <input type="text" id="rg" name="rg" required>
+           
+        <label class="texto-form" for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+           
+        <label class="texto-form" for="email">Email:</label>   
+        <input type="email" id="email" name="email" required>
+           
+        <label class="texto-form" for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <label class="texto-form" for="etnia">Etnia:</label>
+        <select id="etinia" name="etinia" required>
+            <option value="">Selecione</option>
+            <option value="branco">Branco</option>
+            <option value="preto">Preto</option>
+            <option value="pardo">Pardo</option>
+            <option value="indigena">Indigena</option>
+            <option value="amarelo">Amarelo</option>
+            </select>
+
+        <label class="texto-form" for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+            <option value="">Selecione</option>
+            <option value="cisgenero">Cisgênero</option>
+            <option value="Transgenero">Transgênero</option>
+            <option value="naoInformado">Não Informado</option>
+        </select>
+
+        <a class="btn" href="./feed.html">Enviar</a>
+    </form>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

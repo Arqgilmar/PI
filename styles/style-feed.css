@@ -1,0 +1,53 @@
+@import url(./geral.css);
+@import url(./style-cabecalho.css);
+@import url(./style-rodape.css);
+
+/*Carrossel*/
+.carrossel-container {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carrossel img {
+    width: 100%;
+    height: auto;
+}
+
+.carrossel-title {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: var(--cor-botao);
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.buttons button {
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
