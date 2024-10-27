@@ -1,4 +1,4 @@
-//LOGIN
+//JS LOGIN
 function toggleMenu() {
     var menu = document.getElementById("menu");
     if (menu.style.display === "block") {
@@ -8,7 +8,7 @@ function toggleMenu() {
     }
 }
 
-//FEED
+//JS FEED
 let currentIndex1 = 0;
 let currentIndex2 = 0;
 
@@ -44,6 +44,10 @@ function prevSlide(id) {
     }
 }
 
+
+
+
+//JS CADASTRO
 const formulario = document.getElementById('meuFormulario');
 
 formulario.addEventListener('submit', (event) => {
@@ -122,4 +126,46 @@ formulario.addEventListener('submit', (event) => {
 
     alert('Formulário válido! Dados enviados.');
     return true;
+});
+
+
+
+//JS NOVA SOLICITAÇÃO
+const form = document.getElementById('form-solicitacao');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // Impede o envio padrão do formulário
+
+  // Obtenha os dados do formulário
+  const servico = document.getElementById('servico').value;
+  const problema = document.getElementById('problema').value;
+  const fotos = document.getElementById('fotos').files;
+
+  // Crie um objeto com os dados do formulário
+  const formData = new FormData();
+  formData.append('servico', servico);
+  formData.append('problema', problema);
+  for (let i = 0; i < fotos.length; i++) {
+    formData.append('fotos', fotos[i]);
+  }
+
+  // Envie os dados para o servidor (substitua a URL pelo seu endpoint)
+  fetch('/seu-endpoint', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro ao enviar os dados');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Dados enviados com sucesso:', data);
+    // Exibir mensagem de sucesso para o usuário
+  })
+  .catch(error => {
+    console.error('Erro:', error);
+    // Exibir mensagem de erro para o usuário
+  });
 });

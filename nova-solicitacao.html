@@ -74,6 +74,31 @@
     </header>
     
     
+    <form id="form-solicitacao">
+        
+        <h2 class="titulo texto">Nova Solicitação</h2>
+        <p class="subtitulo texto">Selecione o tipo de serviço que você precisa:</p>
+
+        <label for="servico"><p class="texto-soli texto">Serviço:</p></label>
+        <select class="select-servico" id="servico" name="servico">
+            <option value="">Selecione</option>
+            <option value="hidraulica">Hidráulica</option>
+            <option value="pintura">Pintura</option>
+            <option value="limpeza">Limpeza</option>
+            <option value="mudanca">Mudança</option>
+            <option value="pedreira">Pedreira</option>
+            <option value="outros">Outros</option>
+        </select>
+    
+        <label for="problema"><p class="texto-soli">Descrição do trabalho:</p></label>
+        <textarea id="problema" name="problema" rows="5"></textarea>
+    
+        <label for="fotos"><p class="texto-soli texto">Adicione fotos (opcional):</p></label>
+        <input class="input-soli" type="file" id="fotos" name="fotos" multiple>
+    
+        <a class="btn-soli" href="./minhas-solicitacoes.html" type="submit">Enviar</a>
+
+    </form>
 
     <footer>
         <div class="footer-container">
