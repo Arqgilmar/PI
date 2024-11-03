@@ -1,0 +1,37 @@
+/*Rodapé*/
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cor-botao);
+}
+
+.footer-item {
+    text-align: center;
+    padding-top: 2%;
+    text-decoration: none;
+}
+
+.footer-item img {
+    width: 40px;
+    height: auto;
+}
+
+.footer-item p {
+    margin: 5px 0 0 0;
+    width: 100px;
+    font-size: 12px;
+    text-align: center;
+    justify-self: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}

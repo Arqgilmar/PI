@@ -1,0 +1,74 @@
+@import url(./geral.css);
+@import url(./style-cabecalho.css);
+@import url(./style-rodape.css);
+  
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+}
+  
+label {
+    display: block;
+}
+  
+textarea {
+    width: 80%;
+    height: 150px;
+}
+
+.texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.texto-soli {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.titulo{
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.subtitulo {
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+.texto-soli {
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+}
+
+.btn-soli {
+    background-color: #f5a16f;
+    padding: 10px 100px;
+    border-radius: 5px;
+    margin-top: 5rem;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn-soli:hover {
+    cursor: pointer;
+    background-color: #f3b794;
+}
+
+.select-servico {
+    padding: .5rem;
+    width: 80%;
+}
+
+.input-soli {
+    margin-top: .5rem;
+}
