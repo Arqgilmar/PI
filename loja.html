@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARTEIRA</title>
+    <title>Loja SOSYSTERS</title>
     
     <link rel="icon" href="./imagens/favicon.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="./styles/style-carteira.css">
+    <link rel="stylesheet" href="./styles/style-loja.css">
     <link rel="stylesheet" href="./styles/reset.css">
 </head>
 <body>
@@ -76,11 +76,11 @@
     <H1 class="titulo">Carteira</H1>
 
     <div class="container">
-        <a class="btn btn-atual" href="./carteira.html">
+        <a class="btn" href="./carteira.html">
             <img src="./imagens/icone-saldo.svg" alt="Icone de saldo" class="icone">
             <p class="texto">Saldo</p>
         </a>
-        <a class="btn" href="./loja.html">
+        <a class="btn btn-atual" href="./loja.html">
             <img src="./imagens/icone-loja.svg" alt="icone de loja" class="icone">
             <p class="texto">Loja virtual</p>
         </a>
@@ -90,21 +90,81 @@
         </a>
     </div>
 
-    <h6 class="subtitulo">Saldo</h6>
-    <ul class="lista">
-        <li class="itens">
-            <p class="texto-itens">Crédito em dinheiro</p>
-            <p id="valor-dinheiro" class="valor-dinheiro">R$ 110,00</p>
-            <button id="botao1" class="btn-mostrar">
-                <img src="./imagens/icone-esconder.svg" alt="icone de olho">
-            </button>
+    <h6 class="subtitulo">Comprar Mcoins</h6>
+    <ul class="lista-loja">
+        <li class="itens-loja">
+            <div class="linha">
+                <div class="quantidade">
+                    <img src="./imagens/icone-saldo.svg" alt="icone Mcoins">
+                    <p class="quant texto-itens">1</p>
+                </div>
+                <div class="botoes">
+                    <button class="btn-acao rem">
+                        <img src="./imagens/icone-menos.svg" alt="Icone de subtração">
+                    </button>
+                    <button class="btn-acao add">
+                        <img src="./imagens/icone-mais.svg" alt="Icone de adição">
+                    </button>
+                </div>
+            </div>
+            
+            <div class="linha2">
+                <button class="btn-carrinho">
+                    <img src="./imagens/icone-carrinho.svg" alt="Icone carrinho">
+                    <p class="adicionar">adicionar ao carrinho</p>
+                </button> 
+                <p class="valor-coins">R$ 100,00</p>
+            </div>
         </li>
-        <li class="itens">
-            <p class="texto-itens">Crédito em Mcoins</p>
-            <p id="valor-mcoins" class="valor-mcoins">20 un</p>
-            <button id="botao2" class="btn-mostrar">
-                <img src="./imagens/icone-esconder.svg" alt="icone de olho">
-            </button>
+
+        <h6 class="subtitulo">Pacotes</h6>
+
+        <li class="itens-loja">
+            <div class="linha linha-pack">
+                <div class="quantidade">
+                    <p class="quantidade texto-itens texto-pack">50 Mcoins</p>
+                </div>
+            </div>
+            
+            <div class="linha2">
+                <button class="btn-carrinho">
+                    <img src="./imagens/icone-carrinho.svg" alt="Icone carrinho">
+                    <p class="adicionar">adicionar ao carrinho</p>
+                </button> 
+                <p class="valor-coins">R$ 100,00</p>
+            </div>
+        </li>
+
+        <li class="itens-loja-pack">
+            <div class="linha linha-pack">
+                <div class="quantidade">
+                    <p class="quantidade texto-itens texto-pack">100 Mcoins</p>
+                </div>
+            </div>
+            
+            <div class="linha2">
+                <button class="btn-carrinho">
+                    <img src="./imagens/icone-carrinho.svg" alt="Icone carrinho">
+                    <p class="adicionar">adicionar ao carrinho</p>
+                </button> 
+                <p class="valor-coins">R$ 180,00</p>
+            </div>
+        </li>
+
+        <li class="itens-loja-pack">
+            <div class="linha linha-pack">
+                <div class="quantidade">
+                    <p class="quantidade texto-itens texto-pack">200 Mcoins</p>
+                </div>
+            </div>
+            
+            <div class="linha2">
+                <button class="btn-carrinho">
+                    <img src="./imagens/icone-carrinho.svg" alt="Icone carrinho">
+                    <p class="adicionar">adicionar ao carrinho</p>
+                </button> 
+                <p class="valor-coins">R$ 250,00</p>
+            </div>
         </li>
     </ul>
 
@@ -127,7 +187,7 @@
     </footer>
 
     <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="carteira.js"></script>
+    <script type="text/javascript" src="loja.js"></script>
 
 </body>
 </html>

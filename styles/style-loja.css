@@ -35,10 +35,6 @@
     background-color: #E4844B;
 }
 
-.icone {
-    margin-bottom: .2rem;
-}
-
 .texto {
     color: black;
     font-family: 'Roboto', sans-serif;
@@ -54,37 +50,68 @@
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    margin-top: 3rem;
+    margin: 2rem 3rem;
 }
 
-.itens {
+.lista-loja {
+    margin-top: 8%;
+}
+
+.linha, .linha2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 2% 5%;
+    margin: 0 2rem;
+}
+
+.linha {
+    background-color: #f5a16f;
+    margin-bottom: .2rem;
+}
+
+.linha2 {
+    margin: 0 15%;
     align-items: center;
 }
 
-.texto-itens {
+.quantidade {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    padding: .2rem 0;
+}
+
+.btn-acao {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-carrinho {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+}
+
+.adicionar, .valor-coins, .texto-itens {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 700;
 }
 
-.valor-mcoins, .valor-dinheiro {
-    background-color: #F5A16F;
-    width: 6rem;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: .8rem;
-    font-weight: 700;
-    padding: .5rem;
-    text-align: end;
-    margin-left: 4rem;
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn-mostrar {
-    background-color: transparent;
-    border: none;
+.linha-pack {
+    justify-content: center;
+    text-align: center;
+}
+
+.itens-loja-pack {
+    margin: 1rem 0;
 }
