@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERFIL</title>
+    <title>CHAT</title>
     
     <link rel="icon" href="./imagens/favicon.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="./styles/style-perfil.css">
-    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="/styles/style-chat.css">
+    <link rel="stylesheet" href="/styles/reset.css">
 </head>
 <body>
 
@@ -19,10 +19,10 @@
                 <div></div>
             </div>
             <div class="menu" id="menu">
-                <a class="btn-menu" href="#">
+                <a class="btn-menu" href="./perfil.html">
                     <img class="foto-perfil" src="./imagens/foto perfil.png" alt="Foto perfil">
                 </a>
-                <a class="nome-perfil" href="#">
+                <a class="nome-perfil" href="./perfil.html">
                     <p class="texto-menu">Maria Silva</p>
                 </a>
                 <a href="./feed.html">
@@ -67,32 +67,38 @@
                 </a>
             </div>
         </div>
-
-        <img class="img" class="img_logo" src="./imagens/S.O.SYSTERS_2.png" alt="Logo SOSYSTERS">
-
-        <img class="chat" class="img_logo" src="./imagens/Chat_icon-icons 1.png" alt="Icone chat">
+        <a href="/src/feed.html">
+            <img class="img img_logo" src="./imagens/S.O.SYSTERS_2.png" alt="Logo SOSYSTERS">
+        </a>
+        
+        <a href="/src/chat.html">
+            <img class="chat" class="img_logo" src="./imagens/Chat_icon-icons 1.png" alt="Icone chat">
+        </a>
+        
     </header>
     
-    
+    <section class="chat-sessao">
+        <section class="chat__messages">
+            <div class="message--self">Hello, World!</div>
+
+            <div class="message--other">
+                <span class="message--sender">Manual do Dev</span>
+                    Olá, Mundo!
+            </div>
+        </section>
+    </section>
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-item">
-                <img src="./imagens/solicitacoes.png" alt="Minhas Solicitações">
-                <p>Minhas Solicitações</p>
-            </div>
-            <div class="footer-item">
-                <img src="./imagens/criarSolicitacoes.png" alt="Criar Solicitações">
-                <p>Criar Solicitações</p>
-            </div>
-            <div class="footer-item">
-                <img src="./imagens/carteira.png" alt="Carteira">
-                <p>Carteira</p>
-            </div>
-        </div>
+        <form action="" class="chat-form">
+            <input type="text" class="chat-input" placeholder="Digite uma mensagem" required>
+            <button type="submit" class="chat-botao">
+                <img class="icone-send" src="/src/imagens/icone-send.svg" alt="Icone de send para enviar mensagem">
+            </button>
+        </form>
     </footer>
 
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/chat.js"></script>
 
 </body>
 </html>
