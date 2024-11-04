@@ -11,7 +11,37 @@
 </head>
 <body>
 
+    <form id="Formulario-prestadora">
+        <img src="./imagens/S.O 1.png" alt="logo-sosysters">
 
+        <label class="texto-form" for="profissao">Profissão:</label>
+        <select id="profissao" name="profissao" required>
+            <option value="">Selecione</option>
+            <option value="pedreira">Pedreira</option>
+            <option value="pintora">Pintora</option>
+            <option value="empreteira">Empreteira</option>
+            <option value="servico gerais">Serviços gerais</option>
+            <option value="outros">Outros</option>
+        </select>
+
+        <label class="texto-form" for="formacao">Formação Acadêmica:</label>
+        <select id="formacao" name="formacao" required>
+            <option value="">Selecione</option>
+            <option value="fundamental">Ensino fundamental completo</option>
+            <option value="medio">Ensino médio completo</option>
+            <option value="superior">Ensino superior completo</option>
+            <option value="sem formacao">Não possuo nenhuma formação</option>
+            <option value="outros">Outros</option>
+        </select>
+
+        <label class="texto-form" for="qualificacoes">Qualificações:</label>
+        <input type="text" id="qualificacoes" name="qualificacoes" required>
+
+        <label class="texto-form" for="apresentacao">Carta de apresentação</label>
+        <input type="text" id="apresentacao" name="apresentacao">
+
+        <a class="btn" href="./feed.html">Enviar</a>
+    </form>
 
     <footer>
         <div class="footer-container">
