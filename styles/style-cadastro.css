@@ -1,17 +1,16 @@
 @import url(./geral.css);
 
 form {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 img {
     width: 20%;
-    margin-top: 2rem;
+    margin-top: 10%;
 }
 
 label {
@@ -34,6 +33,7 @@ form input, form select {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
+    margin-bottom: 10%;
 }
 
 .btn:hover {

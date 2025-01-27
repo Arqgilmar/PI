@@ -77,6 +77,46 @@
         
     </header>
     
+    <div class="container">
+        <h1>Lista de Serviços</h1>
+    
+        <!-- Campo de Pesquisa -->
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Pesquise por um serviço...">
+        </div>
+    
+        <!-- Botões de Filtros -->
+        <div class="filter-container">
+          <button class="filter-btn" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="construção">Construção</button>
+          <button class="filter-btn" data-filter="pintura">Pintura</button>
+          <button class="filter-btn" data-filter="limpeza">Limpeza</button>
+        </div>
+    
+        <!-- Lista de Serviços -->
+        <ul class="service-list" id="serviceList">
+          <li class="service-item" data-category="construção">
+            <img src="https://via.placeholder.com/100" alt="Pedreira">
+            <h3>Pedreira</h3>
+            <p>Serviço de construção e reforma com alta qualidade.</p>
+          </li>
+          <li class="service-item" data-category="pintura">
+            <img src="https://via.placeholder.com/100" alt="Pintora">
+            <h3>Pintora</h3>
+            <p>Pintura profissional para residências e empresas.</p>
+          </li>
+          <li class="service-item" data-category="limpeza">
+            <img src="https://via.placeholder.com/100" alt="Serviços Gerais">
+            <h3>Serviços Gerais</h3>
+            <p>Limpeza e manutenção em geral para qualquer ambiente.</p>
+          </li>
+          <li class="service-item" data-category="construção">
+            <img src="https://via.placeholder.com/100" alt="Empreteira">
+            <h3>Empreteira</h3>
+            <p>Especialistas em grandes obras e projetos de engenharia.</p>
+          </li>
+        </ul>
+    </div>
 
     <footer>
         <div class="footer-container">
@@ -96,6 +136,7 @@
     </footer>
 
     <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/pesquisa.js"></script>
 
 </body>
 </html>

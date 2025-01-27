@@ -1,3 +1,90 @@
 @import url(./geral.css);
 @import url(./style-cabecalho.css);
 @import url(./style-rodape.css);
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .search-container {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  #search {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  
+  .filter-container {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    background-color: #f5a16f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filter-btn:hover {
+    background-color: #f5a16f;
+  }
+  
+  .service-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .service-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .service-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .service-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .service-item p {
+    margin: 0;
+    color: #666;
+  }

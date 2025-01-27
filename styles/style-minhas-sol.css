@@ -1,3 +1,69 @@
 @import url(./geral.css);
 @import url(./style-cabecalho.css);
 @import url(./style-rodape.css);
+
+.secao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.titulo{
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao {
+    background-color: #f5a16f;
+    color: black;
+  }
+  
+  .botao:hover {
+    background-color: #ef8649;
+  }
+  
+  .lista-solicitacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .itens {
+    display: none;
+    width: 60vw;
+    padding: 0.5rem 2rem;
+    background-color: #f5a16f;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .itens.active {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .itens:hover {
+    background-color: #ef8649;
+  }

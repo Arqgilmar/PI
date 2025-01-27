@@ -77,25 +77,53 @@
         
     </header>
 
-
-    <footer>
+    <section class="secao texto">
+        <h2 class="titulo texto">Minhas Solicitações</h2>
+      
+        <div class="button-container">
+            <button class="botao" data-filter="finalizados">Finalizados</button>
+            <button class="botao" data-filter="pendentes">Pendentes</button>
+            <button class="botao" data-filter="cancelados">Cancelados</button>
+          </div>
+          
+          <ul class="lista-solicitacoes">
+            <li class="itens finalizados">
+              <p class="nome-solicitacao">Solicitação Finalizada</p>
+              <img class="icone-status" src="./imagens/icone-confirmado.svg" alt="Ícone de confirmação">
+            </li>
+          
+            <li class="itens pendentes">
+              <p class="nome-solicitacao">Solicitação Pendente</p>
+              <img class="icone-status" src="./imagens/icone-pendente.svg" alt="Ícone de pendente">
+            </li>
+          
+            <li class="itens cancelados">
+              <p class="nome-solicitacao">Solicitação Cancelada</p>
+              <img class="icone-status" src="./imagens/icone-cancelado.svg" alt="Ícone de cancelado">
+            </li>
+          </ul>
+          
+      
+      <footer>
         <div class="footer-container">
-            <a class="footer-item" href="./minhas-solicitacoes.html">
-                <img src="./imagens/solicitacoes.png" alt="Minhas Solicitações">
-                <p class="texto-footer">Minhas Solicitações</p>
-            </a>
-            <a class="footer-item" href="./nova-solicitacao.html">
-                <img src="./imagens/criarSolicitacoes.png" alt="Criar Solicitações">
-                <p class="texto-footer">Criar Solicitações</p>
-            </a>
-            <a class="footer-item" href="./carteira.html">
-                <img src="./imagens/carteira.png" alt="Carteira">
-                <p class="texto-footer">Carteira</p>
-            </a>
+          <a class="footer-item" href="./minhas-solicitacoes.html">
+            <img src="./imagens/solicitacoes.png" alt="Minhas Solicitações">
+            <p class="texto-footer">Minhas Solicitações</p>
+          </a>
+          <a class="footer-item" href="./nova-solicitacao.html">
+            <img src="./imagens/criarSolicitacoes.png" alt="Criar Solicitações">
+            <p class="texto-footer">Criar Solicitações</p>
+          </a>
+          <a class="footer-item" href="./carteira.html">
+            <img src="./imagens/carteira.png" alt="Carteira">
+            <p class="texto-footer">Carteira</p>
+          </a>
         </div>
-    </footer>
-
-    <script type="text/javascript" src="./js/main.js"></script>
+      </footer>
+      
+      <!-- Scripts -->
+      <script type="text/javascript" src="./js/main.js"></script>
+      <script type="text/javascript" src="./js/minhas-solicitacoes.js"></script>
 
 </body>
 </html>
