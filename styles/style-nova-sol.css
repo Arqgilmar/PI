@@ -7,8 +7,6 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 80vh;
 }
   
 label {
@@ -16,9 +14,10 @@ label {
 }
   
 textarea {
-    width: 80%;
-    height: 40%;
+    width: 90%;
+    height: 150px; 
 }
+
 
 .texto {
     font-family: 'Roboto', sans-serif;
@@ -33,13 +32,15 @@ textarea {
 }
 
 .titulo{
-    font-size: 30px;
+    margin-top: 2rem;
+    font-size: 20px;
     margin-bottom: 2rem;
 }
 
 .subtitulo {
     width: 60%;
-    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 15px;
 }
 
 .texto-soli {
