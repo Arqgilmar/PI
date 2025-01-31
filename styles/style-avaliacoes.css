@@ -1,3 +1,48 @@
 @import url(./geral.css);
 @import url(./style-cabecalho.css);
 @import url(./style-rodape.css);
+
+.container {
+    margin: 20% 8%;
+    max-width: 400px;
+    background: #f5a16f;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.rating {
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+.ratings {
+    text-align: left;
+}
+
+.rating-bar {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.bar {
+    flex: 1;
+    height: 10px;
+    background: #ddd;
+    margin: 0 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    width: 0%;
+    background: #ffcc00;
+    transition: width 0.5s ease-in-out;
+}

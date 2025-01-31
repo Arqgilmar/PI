@@ -1,3 +1,58 @@
 @import url(./geral.css);
 @import url(./style-cabecalho.css);
 @import url(./style-rodape.css);
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: "Roboto", sans-serif;
+}
+
+.perfil {
+    font-family: "Roboto", sans-serif;
+    margin: 20% 8%;
+    background: #f5a16f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ffcc00;
+    margin-bottom: 10px;
+}
+
+.nome-usuario {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.profissao {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.avaliacao {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.estrela {
+    transition: color 0.3s;
+}
+
+.estrela.ativa {
+    color: #ffcc00;
+}
+
+.nota {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
