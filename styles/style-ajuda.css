@@ -1,3 +1,61 @@
 @import url(./geral.css);
 @import url(./style-cabecalho.css);
 @import url(./style-rodape.css);
+
+.container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    text-align: center;
+    padding: 5%;
+}
+
+.campo-pesquisa {
+    align-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.item {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+.pergunta {
+    cursor: pointer;
+    margin: 0;
+}
+
+.resposta {
+    display: none;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.item-pergunta {
+    display: flex;
+    flex-direction: row;
+}
+
+.icone-seta {
+    width: 20px; /* Defina um tamanho adequado para a seta */
+    margin-left: 10px; /* Espaço entre a pergunta e a seta */
+    transition: transform 0.3s ease; /* Transição suave para a rotação */
+}
+
+.rotacionada {
+    transform: rotate(180deg); /* Rotaciona a seta em 90 graus */
+}
