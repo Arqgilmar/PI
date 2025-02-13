@@ -21,11 +21,12 @@
 }
 
 .campo-pesquisa {
-    align-content: center;
+    width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .item {
@@ -33,9 +34,20 @@
     padding: 1rem 0;
 }
 
+.item-pergunta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px; /* Garante um espaço entre os elementos */
+}
+
 .pergunta {
-    cursor: pointer;
+    flex: 1; /* Faz a pergunta ocupar o máximo de espaço possível */
     margin: 0;
+    white-space: normal; /* Permite que o texto quebre em várias linhas */
+    word-wrap: break-word;
+    font-size: 20px;
 }
 
 .resposta {
@@ -45,17 +57,46 @@
     font-weight: 400;
 }
 
-.item-pergunta {
-    display: flex;
-    flex-direction: row;
-}
-
 .icone-seta {
-    width: 20px; /* Defina um tamanho adequado para a seta */
-    margin-left: 10px; /* Espaço entre a pergunta e a seta */
-    transition: transform 0.3s ease; /* Transição suave para a rotação */
+    width: 24px; /* Aumenta um pouco o tamanho da seta */
+    height: auto;
+    flex-shrink: 0; /* Evita que a seta seja reduzida */
+    transition: transform 0.3s ease; /* Transição suave para rotação */
 }
 
-.rotacionada {
-    transform: rotate(180deg); /* Rotaciona a seta em 90 graus */
+/* Garante que a seta esteja sempre visível */
+.item-pergunta > .icone-seta {
+    display: block; 
+}
+
+/* Adaptação para telas menores */
+@media (max-width: 414px) { /* Exemplo: iPhone XR */
+    .container {
+        padding: 10px;
+    }
+
+    .titulo {
+        font-size: 22px;
+        padding: 3%;
+    }
+
+    .campo-pesquisa {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .item-pergunta {
+        display: flex;
+        align-items: center;
+        gap: 5px; /* Garante espaço entre os elementos */
+    }
+
+    .pergunta {
+        font-size: 18px; /* Reduz um pouco o tamanho da pergunta */
+    }
+
+    .icone-seta {
+        width: 20px; /* Ajusta o tamanho da seta */
+        margin-left: 5px; /* Espaço para não ficar colada */
+    }
 }
