@@ -7,13 +7,13 @@
     font-size: 20px;
     font-weight: 700;
     max-width: 600px;
-    margin: 20px auto 10% auto;
+    margin: 20px auto 20% auto;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os itens no eixo horizontal */
+    align-items: center;
 }
 
 .titulo {
@@ -22,20 +22,20 @@
 }
 
 .campo-pesquisa {
-    width: 90%; /* Usa 90% da largura do container */
-    max-width: 500px; /* Evita que fique muito grande */
+    width: 90%;
+    max-width: 500px;
     padding: 10px;
-    margin: 10px auto; /* Centraliza vertical e horizontalmente */
+    margin: 10px auto;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    text-align: center; /* Centraliza o texto dentro do input */
+    text-align: center;
 }
 
 .item {
     border-bottom: 1px solid #ddd;
     padding: 1rem 0;
-    width: 100%; /* Faz os itens ocuparem toda a largura */
+    width: 100%;
 }
 
 .item-pergunta {
@@ -72,7 +72,7 @@
     display: block; 
 }
 
-/* Responsividade para telas menores */
+
 @media (max-width: 414px) { 
     .container {
         padding: 10px;
@@ -84,8 +84,8 @@
     }
 
     .campo-pesquisa {
-        width: 100%; /* Ocupa toda a largura */
-        max-width: 350px; /* Mantém um tamanho bom */
+        width: 100%;
+        max-width: 350px;
         font-size: 14px;
         padding: 8px;
     }
