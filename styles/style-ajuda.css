@@ -7,12 +7,13 @@
     font-size: 20px;
     font-weight: 700;
     max-width: 600px;
-    margin: 20px auto;
+    margin: 20px auto 10% auto;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+    align-items: center; /* Centraliza os itens no eixo horizontal */
 }
 
 .titulo {
@@ -21,17 +22,20 @@
 }
 
 .campo-pesquisa {
-    width: 100%;
+    width: 90%; /* Usa 90% da largura do container */
+    max-width: 500px; /* Evita que fique muito grande */
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 10px auto; /* Centraliza vertical e horizontalmente */
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    text-align: center; /* Centraliza o texto dentro do input */
 }
 
 .item {
     border-bottom: 1px solid #ddd;
     padding: 1rem 0;
+    width: 100%; /* Faz os itens ocuparem toda a largura */
 }
 
 .item-pergunta {
@@ -39,13 +43,13 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    gap: 10px; /* Garante um espaço entre os elementos */
+    gap: 10px;
 }
 
 .pergunta {
-    flex: 1; /* Faz a pergunta ocupar o máximo de espaço possível */
+    flex: 1;
     margin: 0;
-    white-space: normal; /* Permite que o texto quebre em várias linhas */
+    white-space: normal;
     word-wrap: break-word;
     font-size: 20px;
 }
@@ -58,19 +62,18 @@
 }
 
 .icone-seta {
-    width: 24px; /* Aumenta um pouco o tamanho da seta */
+    width: 24px;
     height: auto;
-    flex-shrink: 0; /* Evita que a seta seja reduzida */
-    transition: transform 0.3s ease; /* Transição suave para rotação */
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
 }
 
-/* Garante que a seta esteja sempre visível */
 .item-pergunta > .icone-seta {
     display: block; 
 }
 
-/* Adaptação para telas menores */
-@media (max-width: 414px) { /* Exemplo: iPhone XR */
+/* Responsividade para telas menores */
+@media (max-width: 414px) { 
     .container {
         padding: 10px;
     }
@@ -81,6 +84,8 @@
     }
 
     .campo-pesquisa {
+        width: 100%; /* Ocupa toda a largura */
+        max-width: 350px; /* Mantém um tamanho bom */
         font-size: 14px;
         padding: 8px;
     }
@@ -88,15 +93,15 @@
     .item-pergunta {
         display: flex;
         align-items: center;
-        gap: 5px; /* Garante espaço entre os elementos */
+        gap: 5px;
     }
 
     .pergunta {
-        font-size: 18px; /* Reduz um pouco o tamanho da pergunta */
+        font-size: 18px;
     }
 
     .icone-seta {
-        width: 20px; /* Ajusta o tamanho da seta */
-        margin-left: 5px; /* Espaço para não ficar colada */
+        width: 20px;
+        margin-left: 5px;
     }
 }
