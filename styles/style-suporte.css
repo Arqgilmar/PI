@@ -1,3 +1,94 @@
 @import url(./geral.css);
 @import url(./style-cabecalho.css);
 @import url(./style-rodape.css);
+
+.container {
+    background-color: var(--cor-fundo);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin: 2% auto 10% auto;
+}
+
+
+.titulo {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+}
+
+.descricao {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+label {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input[type="file"] {
+    border: none;
+    padding: 5px;
+}
+
+.botao {
+    background-color: var(--cor-botao);
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 414px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .titulo {
+        font-size: 22px;
+    }
+
+    .descricao {
+        font-size: 14px;
+    }
+}

@@ -3,15 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const campoPesquisa = document.getElementById('campo-pesquisa');
 
     perguntas.forEach(pergunta => {
-        const itemPergunta = pergunta.parentElement; // O div que contém a pergunta e a resposta
-        const resposta = itemPergunta.querySelector('.resposta'); // Seleciona a resposta dentro do mesmo item
-        const seta = itemPergunta.querySelector('.icone-seta'); // Seleciona a seta
+        const itemPergunta = pergunta.parentElement;
+        const resposta = itemPergunta.querySelector('.resposta');
+        const seta = itemPergunta.querySelector('.icone-seta');
 
         pergunta.addEventListener('click', () => {
-            // Alterna a exibição da resposta
             resposta.style.display = resposta.style.display === 'block' ? 'none' : 'block';
-
-            // Rotaciona a seta
             seta.classList.toggle('rotacionada');
         });
     });
@@ -36,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const pergunta = item.querySelector(".pergunta").innerText.toLowerCase();
 
             if (pergunta.includes(termoBusca)) {
-                item.style.display = "block"; // Mostra a pergunta correspondente
+                item.style.display = "block";
             } else {
-                item.style.display = "none"; // Esconde as que não correspondem
+                item.style.display = "none";
             }
         });
     });

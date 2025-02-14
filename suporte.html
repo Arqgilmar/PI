@@ -77,6 +77,26 @@
         
     </header>
     
+    <div class="container">
+        <h1 class="titulo">Suporte</h1>
+        <p class="descricao">
+            Está com problemas no aplicativo? Informe seu problema e descreva. 
+            Entraremos em contato o mais rápido possível.
+        </p>
+
+        <form action="#" method="POST">
+            <label for="nome">Nome da Solicitação</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o título do problema..." required>
+
+            <label for="descricao">Descrição da Solicitação</label>
+            <textarea id="descricao" name="descricao" placeholder="Descreva seu problema..." required></textarea>
+
+            <label for="foto">Anexar Imagem (opcional)</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+
+            <button type="submit" class="botao">Enviar Solicitação</button>
+        </form>
+    </div>
 
     <footer>
         <div class="footer-container">
