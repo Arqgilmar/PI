@@ -1,4 +1,4 @@
-//JS LOGIN
+//MENU HAMBURGUER
 function toggleMenu() {
     var menu = document.getElementById("menu");
     if (menu.style.display === "block") {
