@@ -1,0 +1,15 @@
+/* Estilos para tablet (acima de 768px e abaixo de 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .secao {
+        margin: 0 auto;
+        max-width: 50vw;
+    }
+}
+
+/* Estilos para desktop (acima de 1024px) */
+@media screen and (min-width: 1024px) {
+    .secao {
+        margin: 0 auto;
+        max-width: 40vw;
+    }
+}

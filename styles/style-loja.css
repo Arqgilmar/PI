@@ -1,6 +1,7 @@
 @import url(./geral.css);
 @import url(./style-cabecalho.css);
 @import url(./style-rodape.css);
+@import url(./resposividade.css);
 
 .titulo {
     font-family: 'Roboto', sans-serif;
