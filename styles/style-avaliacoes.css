@@ -46,3 +46,17 @@
     background: #ffcc00;
     transition: width 0.5s ease-in-out;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .secao {
+        margin: 0 auto;
+        max-width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .secao {
+        margin: 0 auto;
+        max-width: 40vw;
+    }
+}
