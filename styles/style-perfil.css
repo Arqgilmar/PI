@@ -1,10 +1,17 @@
 @import url(./geral.css);
 @import url(./style-cabecalho.css);
 @import url(./style-rodape.css);
+@import url(./resposividade.css);
 
 body {
     background-color: var(--cor-fundo);
     font-family: "Roboto", sans-serif;
+}
+
+.secao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .perfil {
