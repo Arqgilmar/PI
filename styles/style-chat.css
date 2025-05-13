@@ -3,7 +3,7 @@
 @import url(./style-rodape.css);
 
 .chat-form {
-    background-color: #E4844B;
+    background-color: var(--cor-botao);
     display: flex;
     justify-content: space-around;
     padding: .6rem 0;
@@ -38,7 +38,7 @@
 }
 
 .message--self {
-    background-color: #f2f2f2;
+    background-color: var(--cor-fundo);
     color: #121212;
     border-radius: 10px 10px 0 10px;
     align-self: flex-end;

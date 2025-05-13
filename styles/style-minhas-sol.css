@@ -35,12 +35,12 @@ button {
   }
   
   .botao {
-    background-color: #f5a16f;
+    background-color: var(--cor-botao);
     color: black;
   }
   
   .botao:hover {
-    background-color: #ef8649;
+    background-color: var(--cor-hover);
   }
   
   .lista-solicitacoes {
@@ -54,7 +54,7 @@ button {
     display: none;
     width: 60vw;
     padding: 0.5rem 2rem;
-    background-color: #f5a16f;
+    background-color: var(--cor-botao);
     border-radius: 5px;
     cursor: pointer;
   }
@@ -65,5 +65,5 @@ button {
   }
   
   .itens:hover {
-    background-color: #ef8649;
+    background-color: var(--cor-hover);
   }

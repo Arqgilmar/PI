@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f5a16f;
+    background-color: var(--cor-botao);
     width: 5rem;
     height: 5rem;
     margin: 1.5rem;
@@ -33,7 +33,7 @@
 }
 
 .btn-atual {
-    background-color: #E4844B;
+    background-color: var(--cor-hover);
 }
 
 .texto {
@@ -66,7 +66,7 @@
 }
 
 .linha {
-    background-color: #f5a16f;
+    background-color: var(--cor-botao);
     margin-bottom: .2rem;
 }
 

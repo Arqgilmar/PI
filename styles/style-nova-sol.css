@@ -49,7 +49,7 @@ textarea {
 }
 
 .btn-soli {
-    background-color: #f5a16f;
+    background-color: var(--cor-botao);
     padding: 10px 100px;
     border-radius: 5px;
     margin-top: 5rem;
@@ -62,7 +62,7 @@ textarea {
 
 .btn-soli:hover {
     cursor: pointer;
-    background-color: #f3b794;
+    background-color: var(--cor-hover);
 }
 
 .select-servico {

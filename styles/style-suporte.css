@@ -74,7 +74,7 @@ input[type="file"] {
 }
 
 .botao:hover {
-    background-color: #ef8649;
+    background-color: var(--cor-hover);
 }
 
 /* Responsividade */

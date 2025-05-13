@@ -15,14 +15,14 @@
 }
 
 .btn_entrar {
-    background-color: #f5a16f;
+    background-color: var(--cor-botao);
     padding: 10px 100px;
     border-radius: 5px;
 }
 
 .btn_entrar:hover {
     cursor: pointer;
-    background-color: #f3b794;
+    background-color: var(--cor-hover);
 }
 
 .titulo {
@@ -37,7 +37,7 @@
 }
 
 .campo_login {
-    border: #f5a16f;
+    border: var(--cor-botao);
     margin-bottom: 15px;
     width: 240px;
     height: 30px;

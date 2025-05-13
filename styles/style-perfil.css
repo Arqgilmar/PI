@@ -17,7 +17,7 @@ body {
 .perfil {
     font-family: "Roboto", sans-serif;
     margin: 20% 8%;
-    background: #f5a16f;
+    background: var(--cor-botao);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);

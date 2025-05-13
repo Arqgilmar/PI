@@ -38,7 +38,7 @@
 .menu a {
     background-color: var(--cor-botao);
     font-family: "Roboto", sans-serif;
-    color: #333;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -63,7 +63,7 @@
 
 
 .menu a:hover {
-    background-color: #E4844B;
+    background-color: var(--cor-hover);
 }
 
 .img {
@@ -77,7 +77,7 @@
 
 .foto-perfil {
     border-radius: 100%;
-    background-color: white;
+    background-color: var(--cor-fonte);
     width: 80%;
     justify-self: center;
 }

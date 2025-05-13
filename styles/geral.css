@@ -2,10 +2,11 @@
 
 :root {
     /* CORES */
-    --cor-fundo: #F7CD92;
-    --cor-botao: #f5a16f;
-    --cor-fonte: #000000;
+    --cor-fundo: #F2F2F2;
+    --cor-hover: #F27127;
+    --cor-fonte: #737372;
     --cor-fonte-branca: #ffffff;
+    --cor-botao:#E4844B;
 }
 
 body {
