@@ -1,3 +1,137 @@
 @import url(./geral.css);
 @import url(./style-cabecalho.css);
 @import url(./style-rodape.css);
+
+.opcao {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.opcao a {
+  background-color: var(--cor-botao);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  color: black;
+  font-size: 16px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 50vw;
+}
+
+.opcao a:hover {
+  background-color: var(--cor-hover);
+}
+
+.secao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.perfil {
+    font-family: "Roboto", sans-serif;
+    background: var(--cor-botao);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 49vw;
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ffcc00;
+    margin-bottom: 10px;
+}
+
+.nome-usuario {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.profissao {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.avaliacao {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.estrela {
+    transition: color 0.3s;
+}
+
+.estrela.ativa {
+    color: #ffcc00;
+}
+
+.nota {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .perfil {
+    width: 78vw;
+    padding: 16px;
+  }
+
+  .foto-perfil {
+    width: 80px;
+    height: 80px;
+  }
+
+  .nome-usuario {
+    font-size: 1.2rem;
+  }
+
+  .profissao,
+  .nota {
+    font-size: 0.95rem;
+  }
+
+  .avaliacao {
+    font-size: 24px;
+  }
+
+  .opcao {
+    gap: 16px;
+  }
+
+  .opcao a {
+    width: 80vw;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  header .img_logo {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .menu-container {
+    position: relative;
+    z-index: 999;
+  }
+}

@@ -1,27 +1,38 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Inicializa todos os itens como visíveis
-  const items = document.querySelectorAll(".itens");
-  items.forEach((item) => {
-    item.classList.add("active");
-  });
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const itens = document.querySelectorAll(".itens");
 
-// Adiciona evento de clique ao container dos botões
-document.querySelector(".button-container").addEventListener("click", function (event) {
-  if (event.target.classList.contains("botao")) {
-    const filter = event.target.getAttribute("data-filter"); // Obtém o filtro do botão clicado
-    const items = document.querySelectorAll(".itens"); // Seleciona todos os itens da lista
+  // Torna todos visíveis por padrão
+  itens.forEach(item => item.classList.add("active"));
 
-    // Itera pelos itens e aplica/remover a classe "active"
-    items.forEach((item) => {
-      if (item.classList.contains(filter)) {
-        item.classList.add("active");
-      } else {
-        item.classList.remove("active");
+  // Filtro por botão
+  const containerBotoes = document.querySelector(".button-container");
+  if (containerBotoes) {
+    containerBotoes.addEventListener("click", event => {
+      if (event.target.classList.contains("botao")) {
+        const filtro = event.target.getAttribute("data-filter");
+        itens.forEach(item => {
+          if (filtro === "todos" || item.classList.contains(filtro)) {
+            item.classList.add("active");
+          } else {
+            item.classList.remove("active");
+          }
+        });
       }
     });
   }
-});
 
-  
-  
+  // Clique no item para abrir/fechar descrição, garantindo apenas um aberto por vez
+  itens.forEach(item => {
+    item.addEventListener("click", () => {
+      // Fecha todos os outros
+      document.querySelectorAll(".itens.open").forEach(outro => {
+        if (outro !== item) {
+          outro.classList.remove("open");
+        }
+      });
+
+      // Alterna a descrição do item clicado
+      item.classList.toggle("open");
+    });
+  });
+});

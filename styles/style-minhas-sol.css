@@ -67,3 +67,49 @@ button {
   .itens:hover {
     background-color: var(--cor-hover);
   }
+
+.lista-solicitacoes {
+  list-style: none;
+  padding: 0;
+  margin: 3%;
+}
+
+.itens {
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.cabecalho-solicitacao {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nome-solicitacao {
+  font-weight: bold;
+}
+
+.descricao-solicitacao {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: max-height 0.3s ease;
+}
+
+.itens.open .descricao-solicitacao {
+  max-height: 500px;
+  padding: 15px;
+}
+
+.imagem-descricao {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+.sol-titulo {
+  text-align: center;
+  font-weight: bold;
+}
