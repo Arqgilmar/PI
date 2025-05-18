@@ -3,12 +3,12 @@
 @import url(./style-rodape.css);
 
 .opcao {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
   align-items: center;
+
 }
 
 .opcao a {
@@ -38,17 +38,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 70vh;
 }
 
 .perfil {
     font-family: "Roboto", sans-serif;
     background: var(--cor-botao);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 49vw;
+    width: 50vw;
+    margin-bottom: 20px;
 }
 
 .foto-perfil {
@@ -56,7 +57,7 @@
     height: 100px;
     border-radius: 50%;
     border: 3px solid #ffcc00;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .nome-usuario {
