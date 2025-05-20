@@ -130,4 +130,8 @@ button {
   .sol-descricao {
     font-size: 12px;
   }
+
+  .sol-titulo {
+  font-size: 5px;
+  }
 }

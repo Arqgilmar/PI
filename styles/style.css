@@ -18,6 +18,7 @@
     background-color: var(--cor-botao);
     padding: 10px 100px;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 .btn_entrar:hover {
@@ -28,12 +29,13 @@
 .titulo {
     font-size: 20px;
     font-weight: 700;
-    margin: 15px 0 15px 0;
+    margin-bottom: 40px;
 }
 
 .login {
     font-size: 18px;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .campo_login {
@@ -46,8 +48,4 @@
 
 .btn_esqueci {
     margin: 15px 0 5% 0;
-}
-
-.img {
-    margin-top: 5%;
 }
