@@ -2,71 +2,73 @@
 @import url(./style-cabecalho.css);
 @import url(./style-rodape.css);
 
-.secao{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
+.secao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .texto {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
 }
 
-.titulo{
-    font-size: 30px;
-    margin-bottom: 2rem;
+.titulo {
+  font-size: 30px;
+  margin-bottom: 2rem;
 }
 
 .button-container {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .botao {
-    background-color: var(--cor-botao);
-    color: black;
-  }
-  
-  .botao:hover {
-    background-color: var(--cor-hover);
-  }
-  
-  .lista-solicitacoes {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 2rem 0;
-  }
-  
-  .itens {
-    display: none;
-    width: 60vw;
-    padding: 0.5rem 2rem;
-    background-color: var(--cor-botao);
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .itens.active {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .itens:hover {
-    background-color: var(--cor-hover);
-  }
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao {
+  background-color: var(--cor-botao);
+  color: black;
+}
+
+.botao:hover {
+  background-color: var(--cor-hover);
+}
+
+.lista-solicitacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.itens {
+  display: none;
+  width: 60vw;
+  padding: 0.5rem 2rem;
+  background-color: var(--cor-botao);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.itens.active {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itens:hover {
+  background-color: var(--cor-hover);
+}
 
 .lista-solicitacoes {
   list-style: none;
@@ -95,6 +97,7 @@ button {
   overflow: hidden;
   padding: 0 15px;
   transition: max-height 0.3s ease;
+  background-color: var(--cor-fundo);
 }
 
 .itens.open .descricao-solicitacao {
@@ -107,9 +110,24 @@ button {
   max-height: 200px;
   object-fit: cover;
   margin: 10px 0;
+  border: 3px solid var(--cor-botao);
 }
 
 .sol-titulo {
   text-align: center;
   font-weight: bold;
+}
+
+/* Para tablets (largura até 1024px) */
+@media (max-width: 1024px) {
+  .sol-descricao {
+    font-size: 12px;
+  }
+}
+
+/* Para celulares (largura até 768px) */
+@media (max-width: 768px) {
+  .sol-descricao {
+    font-size: 12px;
+  }
 }

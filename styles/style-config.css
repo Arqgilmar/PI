@@ -5,7 +5,7 @@
 .opcao {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
 
@@ -38,7 +38,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 70vh;
 }
 
 .perfil {
@@ -49,12 +49,12 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 50vw;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .foto-perfil {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: 3px solid #ffcc00;
     margin-bottom: 5px;
